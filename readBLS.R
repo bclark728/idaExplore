@@ -12,8 +12,7 @@
 library(blsAPI)
 library(rjson)
 
-readBLS <- function(codes, startyear = 2005, 
-                           endyear   = 2015) {
+readBLS <- function(codes, startyear = 2005, endyear = 2015) {
   # build request payload
   payload <- list('seriesid'  = as.list(codes),
                   'startyear' = startyear,
